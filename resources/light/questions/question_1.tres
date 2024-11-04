@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dfh23mitwg1ah"]
+
+[ext_resource type="Script" path="res://scripts/resources/questions.gd" id="1_ml6xy"]
+
+[resource]
+script = ExtResource("1_ml6xy")
+question_info = "Pergunta Teste 1"
+type = 0
+options = Array[String](["Respota Errada 1", "Resposta Errada 2", "Resposta Errada 3", "Resposta Correta"])
+correct_option = "Resposta Correta"
+question_information = "Curiosidade sobre o que foi apresentado na tela anterior da pergunta."
