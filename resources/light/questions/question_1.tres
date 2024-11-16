@@ -6,6 +6,8 @@
 script = ExtResource("1_ml6xy")
 question_info = "Pergunta Teste 1"
 type = 0
-options = Array[String](["Respota Errada 1", "Resposta Errada 2", "Resposta Errada 3", "Resposta Correta"])
-correct_option = "Resposta Correta"
+options = Array[String](["RESPOSTA BOA", "RESPOSTA OK", "RESPOSTA RUIM"])
+best_option = "RESPOSTA BOA"
+ok_option = "RESPOSTA OK"
+bad_option = "RESPOSTA RUIM"
 question_information = "Curiosidade sobre o que foi apresentado na tela anterior da pergunta."

@@ -143,23 +143,6 @@ flat = true
 icon_alignment = 1
 expand_icon = true
 
-[node name="Option_4" type="Button" parent="Content/Question_Options"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
-theme_override_font_sizes/font_size = 50
-theme_override_styles/focus = SubResource("StyleBoxEmpty_el2jc")
-icon = ExtResource("3_kcbwi")
-flat = true
-icon_alignment = 1
-expand_icon = true
-
 [node name="Audio_Correct" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_hmoir")
 pitch_scale = 0.9

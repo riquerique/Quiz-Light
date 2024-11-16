@@ -6,6 +6,8 @@
 script = ExtResource("1_nwefj")
 question_info = "Pergunta Teste 2"
 type = 0
-options = Array[String](["1", "2", "3", "4"])
-correct_option = "4"
+options = Array[String](["1", "2", "3"])
+best_option = "1"
+ok_option = "2"
+bad_option = "3"
 question_information = "ABUBLE ABUBLE LELELELELE"

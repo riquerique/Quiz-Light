@@ -50,12 +50,24 @@ func load_quiz() -> void:
 			question_audio.play()
 
 func _buttons_answer(button) -> void:
-	if current_quiz.correct_option == button.text:
+	#if current_quiz.correct_option == button.text:
+	#	button.modulate = color_correct
+	#	$Audio_Correct.play()
+	#else:
+	#	button.modulate = color_wrong
+	#	$Audio_Wrong.play()
+	if current_quiz.best_option == button.text:
+		print("BEST")
+		button.modulate = color_correct
+		$Audio_Correct.play()
+	elif current_quiz.ok_option == button.text:
+		print("OK")
 		button.modulate = color_correct
 		$Audio_Correct.play()
 	else:
-		button.modulate = color_wrong
-		$Audio_Wrong.play()
+		print("BAD")
+		button.modulate = color_correct
+		$Audio_Correct.play()
 	_next_question()
 
 func _next_question() -> void:
