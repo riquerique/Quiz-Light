@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://b1hurt7kd0beg"]
+[gd_scene load_steps=12 format=3 uid="uid://b1hurt7kd0beg"]
 
 [ext_resource type="Script" path="res://scripts/Controller/game_controller.gd" id="1_a6j28"]
 [ext_resource type="Resource" uid="uid://dwl3rlgrug82i" path="res://resources/light/theme_test.tres" id="2_tqna5"]
 [ext_resource type="Texture2D" uid="uid://bvvpnp2suxfe6" path="res://Assets/Images/question_layout.png" id="3_8m7ml"]
 [ext_resource type="AudioStream" uid="uid://lggn6mbxvmyc" path="res://Assets/Audio/choice_correct.mp3" id="3_hmoir"]
 [ext_resource type="Texture2D" uid="uid://73ky5ccfd6a8" path="res://Assets/Images/Button.png" id="3_kcbwi"]
+[ext_resource type="Theme" uid="uid://kv63ccy33wy6" path="res://resources/light/theme_buttons.tres" id="4_7e3qa"]
 [ext_resource type="AudioStream" uid="uid://di05e7bgj4hps" path="res://Assets/Audio/choice_wrong.mp3" id="4_bikjo"]
 
 [sub_resource type="Animation" id="Animation_vjo0e"]
@@ -261,6 +262,7 @@ offset_top = 535.0
 offset_right = 734.0
 offset_bottom = 767.0
 size_flags_vertical = 3
+theme = ExtResource("4_7e3qa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -281,6 +283,7 @@ offset_top = 787.0
 offset_right = 734.0
 offset_bottom = 1019.0
 size_flags_vertical = 3
+theme = ExtResource("4_7e3qa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -301,6 +304,7 @@ offset_top = 1039.0
 offset_right = 734.0
 offset_bottom = 1272.0
 size_flags_vertical = 3
+theme = ExtResource("4_7e3qa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
