@@ -17,10 +17,18 @@ var current_quiz : QuizQuestion:
 @onready var question_audio: AudioStreamPlayer = $Content/Question_Info/Question_Assets/Question_Audio
 
 func _ready() -> void:
-	for button in $Content/Question_Options.get_children():
-		buttons.append(button)
+	
+	
+	for button in $Content/Question_Options/Ani.get_children():
+		$Content/Question_Options/Ani.play("fade")	
+		
+		buttons.append(button)		
+		button.disabled = true
 	randomize_questions(quiz.theme)
 	load_quiz()
+	await $Content/Question_Options/Ani.animation_finished
+	for button in $Content/Question_Options/Ani.get_children():
+		button.disabled = false
 
 func load_quiz() -> void:
 	if index >= quiz.theme.size():
