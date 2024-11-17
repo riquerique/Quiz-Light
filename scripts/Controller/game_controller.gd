@@ -109,4 +109,4 @@ func randomize_questions(array: Array) -> Array:
 	return array_temp
 
 func _game_over() -> void:
-	pass
+	get_tree().change_scene_to_file('res://scenes/results.tscn')
