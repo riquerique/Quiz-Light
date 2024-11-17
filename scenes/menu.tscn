@@ -1,13 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bfcimw1u8itdj"]
+[gd_scene load_steps=4 format=3 uid="uid://bfcimw1u8itdj"]
 
 [ext_resource type="Script" path="res://scripts/Controller/menu.gd" id="1_jn3gv"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6xw0v"]
-bg_color = Color(0.000681875, 0.000729791, 0.00047598, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
+[ext_resource type="StyleBox" uid="uid://5hcpmylj6yyn" path="res://resources/Styles/button_hover.tres" id="2_dpv2r"]
+[ext_resource type="StyleBox" uid="uid://k5bopk0s1r21" path="res://resources/Styles/button_normal.tres" id="2_l1mn0"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -32,7 +27,8 @@ offset_bottom = 36.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_6xw0v")
+theme_override_styles/hover = ExtResource("2_dpv2r")
+theme_override_styles/normal = ExtResource("2_l1mn0")
 text = "Jogar"
 
 [node name="Label" type="Label" parent="."]

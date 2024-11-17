@@ -1,13 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b5w1yk0tqcxoy"]
+[gd_scene load_steps=4 format=3 uid="uid://b5w1yk0tqcxoy"]
 
 [ext_resource type="Script" path="res://scripts/resultado.gd" id="1_0yt5c"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i0i31"]
-bg_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
+[ext_resource type="StyleBox" uid="uid://k5bopk0s1r21" path="res://resources/Styles/button_normal.tres" id="2_e3ctl"]
+[ext_resource type="StyleBox" uid="uid://5hcpmylj6yyn" path="res://resources/Styles/button_hover.tres" id="2_v3dx5"]
 
 [node name="Results" type="Control"]
 layout_mode = 3
@@ -72,7 +67,8 @@ offset_bottom = 532.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_i0i31")
+theme_override_styles/hover = ExtResource("2_v3dx5")
+theme_override_styles/normal = ExtResource("2_e3ctl")
 text = "Jogar Novamente"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
