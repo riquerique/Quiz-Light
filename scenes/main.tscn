@@ -171,7 +171,7 @@ _data = {
 [node name="Main" type="CanvasLayer"]
 script = ExtResource("1_a6j28")
 quiz = ExtResource("2_tqna5")
-color_correct = Color(0, 1, 0, 1)
+color_correct = Color(0.141176, 0.666667, 0.639216, 1)
 color_wrong = Color(1, 0, 0, 1)
 
 [node name="Content" type="Control" parent="."]
