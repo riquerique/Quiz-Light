@@ -17,11 +17,9 @@ var current_quiz : QuizQuestion:
 @onready var question_audio: AudioStreamPlayer = $Content/Question_Info/Question_Assets/Question_Audio
 
 func _ready() -> void:
-	
+	$Content/Question_Options/Ani.play("fade")	
 	
 	for button in $Content/Question_Options/Ani.get_children():
-		$Content/Question_Options/Ani.play("fade")	
-		
 		buttons.append(button)		
 		button.disabled = true
 	randomize_questions(quiz.theme)
@@ -29,7 +27,8 @@ func _ready() -> void:
 	await $Content/Question_Options/Ani.animation_finished
 	for button in $Content/Question_Options/Ani.get_children():
 		button.disabled = false
-
+		
+		
 func load_quiz() -> void:
 	if index >= quiz.theme.size():
 		_game_over()
@@ -89,8 +88,17 @@ func _next_question() -> void:
 	question_audio.stream = null
 	question_video.stream = null
 	index += 1
+	
 	load_quiz()
-
+	$Content/Question_Options/Ani.play("fade")
+	for button in $Content/Question_Options/Ani.get_children():
+		buttons.append(button)		
+		button.disabled = true	
+	await $Content/Question_Options/Ani.animation_finished
+	for button in $Content/Question_Options/Ani.get_children():
+		button.disabled = false
+		
+		
 func randomize_questions(array: Array) -> Array:
 	var array_temp = array
 	array_temp.shuffle()
