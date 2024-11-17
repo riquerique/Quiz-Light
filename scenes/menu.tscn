@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfcimw1u8itdj"]
+
+[ext_resource type="Script" path="res://scripts/Controller/menu.gd" id="1_jn3gv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6xw0v"]
+bg_color = Color(0.000681875, 0.000729791, 0.00047598, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jn3gv")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -108.5
+offset_top = -36.0
+offset_right = 108.5
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_6xw0v")
+text = "Jogar"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 118.0
+offset_top = 88.0
+offset_right = -87.0
+offset_bottom = -1086.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 70
+text = "Jogo Quiz Light"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
