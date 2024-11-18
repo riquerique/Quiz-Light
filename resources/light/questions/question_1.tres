@@ -1,13 +1,15 @@
-[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dfh23mitwg1ah"]
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=3 format=3 uid="uid://dfh23mitwg1ah"]
 
 [ext_resource type="Script" path="res://scripts/resources/questions.gd" id="1_ml6xy"]
+[ext_resource type="Texture2D" uid="uid://ceb7akeccm508" path="res://Assets/Questions/Light/Images/questao_1.png" id="1_tfjsj"]
 
 [resource]
 script = ExtResource("1_ml6xy")
-question_info = "Pergunta Teste 1"
-type = 0
-options = Array[String](["RESPOSTA BOA", "RESPOSTA OK", "RESPOSTA RUIM"])
-best_option = "RESPOSTA BOA"
-ok_option = "RESPOSTA OK"
-bad_option = "RESPOSTA RUIM"
-question_information = "Curiosidade sobre o que foi apresentado na tela anterior da pergunta."
+question_info = "Ao lavar a louça você..."
+type = 1
+question_image = ExtResource("1_tfjsj")
+options = Array[String](["Utilizo balde para reduzir o consumo de água", "Deixo a torneira ligada o tempo todo", "Uso a torneira, mas tempo ser rápido"])
+best_option = "Utilizo balde para reduzir o consumo de água"
+ok_option = "Uso a torneira, mas tempo ser rápido"
+bad_option = "Deixo a torneira ligada o tempo todo"
+question_information = ""

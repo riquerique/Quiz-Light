@@ -11,10 +11,10 @@ var right_questions : int
 var current_quiz : QuizQuestion:
 	get: return quiz.theme[index]
 
-@onready var question_texts: Label = $Content/Question_Info/Question_Text
-@onready var question_image: TextureRect = $Content/Question_Info/Question_Assets/Question_Image
-@onready var question_video: VideoStreamPlayer = $Content/Question_Info/Question_Assets/Question_Video
-@onready var question_audio: AudioStreamPlayer = $Content/Question_Info/Question_Assets/Question_Audio
+@onready var question_texts: Label = $Content/Question_Info_2/Question_Text_2
+@onready var question_image: TextureRect = $Content/Question_Info_2/Question_Image_2
+@onready var question_video: VideoStreamPlayer = $Content/Question_Info_OLD/Question_Assets/Question_Video
+@onready var question_audio: AudioStreamPlayer = $Content/Question_Info_OLD/Question_Assets/Question_Audio
 
 func _ready() -> void:
 	$Content/Question_Options/Ani.play("fade")	
@@ -42,16 +42,16 @@ func load_quiz() -> void:
 
 	match current_quiz.type:
 		Enum.QuestionType.TEXT:
-			$Content/Question_Info/Question_Assets.hide()
+			$Content/Question_Info_2/Question_Image_2.hide()
 		Enum.QuestionType.IMAGE:
-			$Content/Question_Info/Question_Assets.show()
+			$Content/Question_Info_2/Question_Image_2.show()
 			question_image.texture = current_quiz.question_image
 		Enum.QuestionType.VIDEO:
-			$Content/Question_Info/Question_Assets.show()
+			$Content/Question_Info_OLD/Question_Assets.show()
 			question_video.stream = current_quiz.question_video
 			question_video.play()
 		Enum.QuestionType.AUDIO:
-			$Content/Question_Info/Question_Assets.show()
+			$Content/Question_Info_OLD/Question_Assets.show()
 			question_image.texture = current_quiz.question_image
 			question_audio.stream = current_quiz.question_audio
 			question_audio.play()

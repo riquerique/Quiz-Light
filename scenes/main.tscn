@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://b1hurt7kd0beg"]
+[gd_scene load_steps=13 format=3 uid="uid://b1hurt7kd0beg"]
 
 [ext_resource type="Script" path="res://scripts/Controller/game_controller.gd" id="1_a6j28"]
 [ext_resource type="Resource" uid="uid://dwl3rlgrug82i" path="res://resources/light/theme_test.tres" id="2_tqna5"]
@@ -166,6 +166,8 @@ _data = {
 "fade": SubResource("Animation_1kxgw")
 }
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8w54f"]
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_el2jc"]
 
 [node name="Main" type="CanvasLayer"]
@@ -197,14 +199,15 @@ anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
 offset_left = 6.0
-offset_top = -549.0
+offset_top = -583.0
 offset_right = -5.0
-offset_bottom = -139.0
+offset_bottom = -173.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_8m7ml")
 
-[node name="Question_Info" type="VBoxContainer" parent="Content"]
+[node name="Question_Info_OLD" type="VBoxContainer" parent="Content"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -216,7 +219,7 @@ offset_bottom = -786.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Question_Text" type="Label" parent="Content/Question_Info"]
+[node name="Question_Text" type="Label" parent="Content/Question_Info_OLD"]
 custom_minimum_size = Vector2(0, 70)
 layout_mode = 2
 size_flags_vertical = 6
@@ -225,11 +228,11 @@ text = "PERGUNTA"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Question_Assets" type="Panel" parent="Content/Question_Info"]
+[node name="Question_Assets" type="Panel" parent="Content/Question_Info_OLD"]
 custom_minimum_size = Vector2(0, 390)
 layout_mode = 2
 
-[node name="Question_Image" type="TextureRect" parent="Content/Question_Info/Question_Assets"]
+[node name="Question_Image" type="TextureRect" parent="Content/Question_Info_OLD/Question_Assets"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -239,7 +242,7 @@ grow_vertical = 2
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Question_Video" type="VideoStreamPlayer" parent="Content/Question_Info/Question_Assets"]
+[node name="Question_Video" type="VideoStreamPlayer" parent="Content/Question_Info_OLD/Question_Assets"]
 clip_contents = true
 layout_mode = 1
 anchors_preset = 15
@@ -249,7 +252,7 @@ grow_horizontal = 2
 grow_vertical = 2
 expand = true
 
-[node name="Question_Audio" type="AudioStreamPlayer" parent="Content/Question_Info/Question_Assets"]
+[node name="Question_Audio" type="AudioStreamPlayer" parent="Content/Question_Info_OLD/Question_Assets"]
 
 [node name="Question_Options" type="VBoxContainer" parent="Content"]
 layout_mode = 1
@@ -257,9 +260,9 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 6.0
-offset_top = 535.0
+offset_top = 501.0
 offset_right = -5.0
-offset_bottom = -8.0
+offset_bottom = -42.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 20
@@ -268,12 +271,14 @@ theme_override_constants/separation = 20
 libraries = {
 "": SubResource("AnimationLibrary_eoukn")
 }
+speed_scale = 2.0
 
 [node name="Option_1" type="Button" parent="Content/Question_Options/Ani"]
 offset_left = 25.0
 offset_top = 535.0
 offset_right = 734.0
 offset_bottom = 767.0
+scale = Vector2(1.00252, 1)
 size_flags_vertical = 3
 theme = ExtResource("4_7e3qa")
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
@@ -283,10 +288,11 @@ theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
-theme_override_font_sizes/font_size = 50
-theme_override_styles/focus = SubResource("StyleBoxEmpty_el2jc")
+theme_override_font_sizes/font_size = 38
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8w54f")
 icon = ExtResource("3_kcbwi")
 flat = true
+autowrap_mode = 2
 icon_alignment = 1
 expand_icon = true
 
@@ -304,10 +310,11 @@ theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 38
 theme_override_styles/focus = SubResource("StyleBoxEmpty_el2jc")
 icon = ExtResource("3_kcbwi")
 flat = true
+autowrap_mode = 2
 icon_alignment = 1
 expand_icon = true
 
@@ -325,12 +332,44 @@ theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 38
 theme_override_styles/focus = SubResource("StyleBoxEmpty_el2jc")
 icon = ExtResource("3_kcbwi")
 flat = true
+autowrap_mode = 2
 icon_alignment = 1
 expand_icon = true
+
+[node name="Question_Info_2" type="VBoxContainer" parent="Content"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 60.0
+offset_top = 144.0
+offset_right = -53.0
+offset_bottom = -871.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Question_Image_2" type="TextureRect" parent="Content/Question_Info_2"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Question_Text_2" type="Label" parent="Content/Question_Info_2"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "PERGUNTA"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
 
 [node name="Audio_Correct" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_hmoir")

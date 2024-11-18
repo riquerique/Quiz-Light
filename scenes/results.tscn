@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://b5w1yk0tqcxoy"]
+[gd_scene load_steps=6 format=3 uid="uid://b5w1yk0tqcxoy"]
 
 [ext_resource type="Script" path="res://scripts/resultado.gd" id="1_0yt5c"]
 [ext_resource type="StyleBox" uid="uid://k5bopk0s1r21" path="res://resources/Styles/button_normal.tres" id="2_e3ctl"]
+[ext_resource type="Texture2D" uid="uid://mv4u6244jg87" path="res://Assets/Images/WhiteBG.png" id="2_ubis7"]
 [ext_resource type="StyleBox" uid="uid://5hcpmylj6yyn" path="res://resources/Styles/button_hover.tres" id="2_v3dx5"]
+[ext_resource type="FontFile" uid="uid://cctnqykbgijrg" path="res://Assets/Fonts/Bolga.otf" id="3_uk6yi"]
 
 [node name="Results" type="Control"]
 layout_mode = 3
@@ -13,14 +15,46 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_0yt5c")
 
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ubis7")
+
+[node name="Fim" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -576.0
+offset_bottom = -491.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0.639216, 0.607843, 1)
+theme_override_fonts/font = ExtResource("3_uk6yi")
+theme_override_font_sizes/font_size = 70
+text = "FIM DO QUIZ!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
-anchors_preset = 10
+anchors_preset = 14
+anchor_top = 0.5
 anchor_right = 1.0
-offset_bottom = 169.0
+anchor_bottom = 0.5
+offset_top = -462.0
+offset_bottom = -377.0
 grow_horizontal = 2
-theme_override_font_sizes/font_size = 50
-text = "FIM DO QUIZ!"
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0.639216, 0.607843, 1)
+theme_override_fonts/font = ExtResource("3_uk6yi")
+theme_override_font_sizes/font_size = 58
+text = "SEU PERFIL É: "
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -30,12 +64,16 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_top = -351.0
-offset_bottom = -225.0
+offset_left = 43.0
+offset_top = -392.0
+offset_right = -43.0
+offset_bottom = -234.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 40
-text = "SEU PERFIL É: "
+theme_override_colors/font_color = Color(0, 0.639216, 0.607843, 1)
+theme_override_fonts/font = ExtResource("3_uk6yi")
+theme_override_font_sizes/font_size = 70
+text = "TESTE!"
 horizontal_alignment = 1
 autowrap_mode = 3
 
@@ -46,12 +84,15 @@ anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
 offset_left = 30.0
-offset_top = -219.0
+offset_top = -208.0
 offset_right = -30.0
-offset_bottom = 34.0
+offset_bottom = 177.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 40
+theme_override_colors/font_color = Color(0, 0.639216, 0.607843, 1)
+theme_override_fonts/font = ExtResource("3_uk6yi")
+theme_override_font_sizes/font_size = 48
+text = "ABLEABELB ABELBAELBLABEL BLBEL BLBELB ABEL BEB LBEL BELE B LBELA EBABLELAB ELB LEABELBAL ELAE BALE BAELBL BABELBE"
 horizontal_alignment = 1
 autowrap_mode = 3
 
@@ -61,10 +102,10 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 64.0
-offset_top = 372.0
-offset_right = -63.0
-offset_bottom = 532.0
+offset_left = 69.0
+offset_top = 177.0
+offset_right = -64.0
+offset_bottom = 301.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 50
