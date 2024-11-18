@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=3 format=3 uid="uid://d1rw6dgcvg832"]
+
+[ext_resource type="Texture2D" uid="uid://ceb7akeccm508" path="res://Assets/Questions/Light/Images/questao_1.png" id="1_813kb"]
+[ext_resource type="Script" path="res://scripts/resources/questions.gd" id="1_rcnnm"]
+
+[resource]
+script = ExtResource("1_rcnnm")
+question_info = "Como vocês costumam lidar com resíduos que possam poluir a água (como óleo de cozinha usado)?"
+type = 1
+question_image = ExtResource("1_813kb")
+options = Array[String](["Despejamos na pia", "Descartamos no lixo comum", "Levamos para reciclagem apropriada", "Guardamos até encontrar um local correto para descarte"])
+best_option = "Levamos para reciclagem apropriada"
+good_option = "Guardamos até encontrar um local correto para descarte"
+ok_option = "Descartamos no lixo comum"
+bad_option = "Despejamos na pia"

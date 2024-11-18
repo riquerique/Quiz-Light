@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=3 format=3 uid="uid://bw6hvcd0u7k1h"]
+
+[ext_resource type="Script" path="res://scripts/resources/questions.gd" id="1_2ooyg"]
+[ext_resource type="Texture2D" uid="uid://ceb7akeccm508" path="res://Assets/Questions/Light/Images/questao_1.png" id="1_jq1fx"]
+
+[resource]
+script = ExtResource("1_2ooyg")
+question_info = "Quando vocês regam as plantas, que método costumam usar?"
+type = 1
+question_image = ExtResource("1_jq1fx")
+options = Array[String](["Usamos mangueira sem controle", "Usamos mangueira com bico regulador", "Usamos regador manual", "Reaproveitamos água da chuva"])
+best_option = "Reaproveitamos água da chuva"
+good_option = "Usamos regador manual"
+ok_option = "Usamos mangueira com bico regulador"
+bad_option = "Usamos mangueira sem controle"

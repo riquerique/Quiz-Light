@@ -10,6 +10,8 @@ var right_questions : int
 
 var current_quiz : QuizQuestion:
 	get: return quiz.theme[index]
+	
+var points_array = [[10,7,4,1],[10,7,5,1],[10,7,4,1],[10,7,5,1],[10,7,4,1],[10,7,5,1],[10,7,4,1],[10,7,4,1],[10,7,5,1],[10,7,3,1]]
 
 @onready var question_texts: Label = $Content/Question_Info_2/Question_Text_2
 @onready var question_image: TextureRect = $Content/Question_Info_2/Question_Image_2
@@ -22,7 +24,7 @@ func _ready() -> void:
 	for button in $Content/Question_Options/Ani.get_children():
 		buttons.append(button)		
 		button.disabled = true
-	randomize_questions(quiz.theme)
+	#randomize_questions(quiz.theme)
 	load_quiz()
 	await $Content/Question_Options/Ani.animation_finished
 	for button in $Content/Question_Options/Ani.get_children():
@@ -36,7 +38,7 @@ func load_quiz() -> void:
 
 	question_texts.text = current_quiz.question_info
 	var choices = randomize_questions(current_quiz.options)
-	for i in buttons.size():
+	for i in $Content/Question_Options/Ani.get_children().size():#buttons.size():
 		buttons[i].text = choices[i]
 		buttons[i].pressed.connect(_buttons_answer.bind(buttons[i]))
 
@@ -66,26 +68,31 @@ func _buttons_answer(button) -> void:
 	if current_quiz.best_option == button.text:
 		print("BEST")
 		button.modulate = color_correct
-		GlobalVar.pontos += 15
+		GlobalVar.pontos += points_array[index][0]
+		$Audio_Correct.play()
+	elif current_quiz.good_option == button.text:
+		print("GOOD")
+		button.modulate = color_correct
+		GlobalVar.pontos += points_array[index][1]
 		$Audio_Correct.play()
 	elif current_quiz.ok_option == button.text:
 		print("OK")
 		button.modulate = color_correct
-		GlobalVar.pontos += 10
+		GlobalVar.pontos += points_array[index][2]
 		$Audio_Correct.play()
 	else:
 		print("BAD")
 		button.modulate = color_correct
-		GlobalVar.pontos += 5
+		GlobalVar.pontos += points_array[index][3]
 		$Audio_Correct.play()
 	_next_question()
 
 func _next_question() -> void:
 	print(GlobalVar.pontos)
-	for button in buttons:
+	for button in $Content/Question_Options/Ani.get_children():#buttons:
 		button.pressed.disconnect(_buttons_answer)
 	await get_tree().create_timer(1).timeout
-	for button in buttons:
+	for button in $Content/Question_Options/Ani.get_children():#buttons:
 		button.modulate = Color.WHITE
 	question_audio.stop()
 	question_video.stop()

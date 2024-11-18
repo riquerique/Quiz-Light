@@ -8,6 +8,6 @@ class_name QuizQuestion
 @export var question_video : VideoStream
 @export var options : Array[String]
 @export var best_option : String
+@export var good_option : String
 @export var ok_option : String
 @export var bad_option : String
-@export var question_information : String

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=3 format=3 uid="uid://brw0utaiccxe7"]
+
+[ext_resource type="Texture2D" uid="uid://ceb7akeccm508" path="res://Assets/Questions/Light/Images/questao_1.png" id="1_i57nq"]
+[ext_resource type="Script" path="res://scripts/resources/questions.gd" id="1_m2j1r"]
+
+[resource]
+script = ExtResource("1_m2j1r")
+question_info = "Com que frequência vocês verificam vazamentos em torneiras e canos da casa?"
+type = 1
+question_image = ExtResource("1_i57nq")
+options = Array[String](["Regularmente", "Quando percebemos algum problema", "Raramente", "Nunca"])
+best_option = "Regularmente"
+good_option = "Quando percebemos algum problema"
+ok_option = "Raramente"
+bad_option = "Nunca"

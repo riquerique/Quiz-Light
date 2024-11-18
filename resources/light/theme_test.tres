@@ -1,10 +1,18 @@
-[gd_resource type="Resource" script_class="QuizTheme" load_steps=5 format=3 uid="uid://dwl3rlgrug82i"]
+[gd_resource type="Resource" script_class="QuizTheme" load_steps=13 format=3 uid="uid://dwl3rlgrug82i"]
 
 [ext_resource type="Script" path="res://scripts/resources/themes.gd" id="1_h7ohf"]
 [ext_resource type="Script" path="res://scripts/resources/questions.gd" id="2_0orw1"]
 [ext_resource type="Resource" uid="uid://dfh23mitwg1ah" path="res://resources/light/questions/question_1.tres" id="3_m6vjv"]
 [ext_resource type="Resource" uid="uid://bd4qrrui4r0ey" path="res://resources/light/questions/question_2.tres" id="4_d5k7v"]
+[ext_resource type="Resource" uid="uid://wiibe7rnv8av" path="res://resources/light/questions/question_3.tres" id="5_m55ll"]
+[ext_resource type="Resource" uid="uid://dvqhyhlacnf00" path="res://resources/light/questions/question_4.tres" id="6_jvqfe"]
+[ext_resource type="Resource" uid="uid://brw0utaiccxe7" path="res://resources/light/questions/question_5.tres" id="7_ajkdv"]
+[ext_resource type="Resource" uid="uid://bw6hvcd0u7k1h" path="res://resources/light/questions/question_6.tres" id="8_o7dmy"]
+[ext_resource type="Resource" uid="uid://cnb0aaox4gbll" path="res://resources/light/questions/question_7.tres" id="9_qrvxr"]
+[ext_resource type="Resource" uid="uid://iunqxsfh3bsl" path="res://resources/light/questions/question_8.tres" id="10_qaecc"]
+[ext_resource type="Resource" uid="uid://cujljp4mcgabp" path="res://resources/light/questions/question_9.tres" id="11_wtl04"]
+[ext_resource type="Resource" uid="uid://d1rw6dgcvg832" path="res://resources/light/questions/question_10.tres" id="12_s8kj2"]
 
 [resource]
 script = ExtResource("1_h7ohf")
-theme = Array[ExtResource("2_0orw1")]([ExtResource("3_m6vjv"), ExtResource("4_d5k7v")])
+theme = Array[ExtResource("2_0orw1")]([ExtResource("3_m6vjv"), ExtResource("4_d5k7v"), ExtResource("5_m55ll"), ExtResource("6_jvqfe"), ExtResource("7_ajkdv"), ExtResource("8_o7dmy"), ExtResource("9_qrvxr"), ExtResource("10_qaecc"), ExtResource("11_wtl04"), ExtResource("12_s8kj2")])

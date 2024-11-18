@@ -5,11 +5,12 @@
 
 [resource]
 script = ExtResource("1_ml6xy")
-question_info = "Ao lavar a louça você..."
+question_info = "Com que frequência sua família toma banhos rápidos (menos de 5 minutos)?"
 type = 1
 question_image = ExtResource("1_tfjsj")
-options = Array[String](["Utilizo balde para reduzir o consumo de água", "Deixo a torneira ligada o tempo todo", "Uso a torneira, mas tempo ser rápido"])
-best_option = "Utilizo balde para reduzir o consumo de água"
-ok_option = "Uso a torneira, mas tempo ser rápido"
-bad_option = "Deixo a torneira ligada o tempo todo"
+options = Array[String](["Sempre", "Frequentemente", "Às vezes", "Raramente"])
+best_option = "Sempre"
+good_option = "Frequentemente"
+ok_option = "Às vezes"
+bad_option = "Raramente"
 question_information = ""
