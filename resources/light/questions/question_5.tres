@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="QuizQuestion" load_steps=3 format=3 uid="uid://brw0utaiccxe7"]
 
-[ext_resource type="Texture2D" uid="uid://ht2cpibuux4r" path="res://Assets/Questions/Light/Images/torneira.png" id="1_cs3c8"]
+[ext_resource type="Texture2D" uid="uid://cb7tkthtfyyn6" path="res://Assets/Questions/Light/Images/torneira.png" id="1_cs3c8"]
 [ext_resource type="Script" path="res://scripts/resources/questions.gd" id="1_m2j1r"]
 
 [resource]

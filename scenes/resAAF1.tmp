@@ -24,21 +24,6 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_ubis7")
 
-[node name="Icon" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.336
-anchor_top = 0.284
-anchor_right = 0.653
-anchor_bottom = 0.462
-offset_left = 0.0799866
-offset_top = -0.52002
-offset_right = -0.160034
-offset_bottom = -0.359985
-grow_horizontal = 2
-grow_vertical = 2
-expand_mode = 1
-
 [node name="Fim" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 14
@@ -98,10 +83,10 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 28.0
-offset_top = -8.0
-offset_right = -32.0
-offset_bottom = 377.0
+offset_left = 30.0
+offset_top = -75.0
+offset_right = -30.0
+offset_bottom = 310.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0.639216, 0.607843, 1)
@@ -117,15 +102,27 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 67.0
-offset_top = 383.0
-offset_right = -66.0
-offset_bottom = 507.0
+offset_left = 69.0
+offset_top = 271.0
+offset_right = -64.0
+offset_bottom = 395.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 50
 theme_override_styles/hover = ExtResource("2_v3dx5")
 theme_override_styles/normal = ExtResource("2_e3ctl")
 text = "Jogar Novamente"
+
+[node name="Icon" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 299.0
+offset_top = 376.0
+offset_right = -293.0
+offset_bottom = -776.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

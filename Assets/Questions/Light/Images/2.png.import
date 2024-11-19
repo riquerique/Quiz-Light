@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cb7tkthtfyyn6"
-path="res://.godot/imported/torneira.png-33d9ade458392139f09dfc9296561762.ctex"
+uid="uid://cmuu4qv0g0ixh"
+path="res://.godot/imported/2.png-8e135eb86194092ba4665129abecd700.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Questions/Light/Images/torneira.png"
-dest_files=["res://.godot/imported/torneira.png-33d9ade458392139f09dfc9296561762.ctex"]
+source_file="res://Assets/Questions/Light/Images/2.png"
+dest_files=["res://.godot/imported/2.png-8e135eb86194092ba4665129abecd700.ctex"]
 
 [params]
 
