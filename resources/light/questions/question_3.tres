@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="QuizQuestion" load_steps=3 format=3 uid="uid://wiibe7rnv8av"]
 
 [ext_resource type="Script" path="res://scripts/resources/questions.gd" id="1_75x4p"]
-[ext_resource type="Texture2D" uid="uid://ceb7akeccm508" path="res://Assets/Questions/Light/Images/questao_1.png" id="1_jecbm"]
+[ext_resource type="Texture2D" uid="uid://6xkfflwsacag" path="res://Assets/Questions/Light/Images/maquina-de-lavar.png" id="1_uvo1f"]
 
 [resource]
 script = ExtResource("1_75x4p")
 question_info = "Com que frequência vocês reutilizam a água da máquina de lavar para outras tarefas (como lavar o quintal)?"
 type = 1
-question_image = ExtResource("1_jecbm")
+question_image = ExtResource("1_uvo1f")
 options = Array[String](["Sempre", "Frequentemente", "Às vezes", "Nunca"])
 best_option = "Sempre"
 good_option = "Frequentemente"

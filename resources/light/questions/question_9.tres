@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="QuizQuestion" load_steps=3 format=3 uid="uid://cujljp4mcgabp"]
 
+[ext_resource type="Texture2D" uid="uid://cxwgckyag6qy8" path="res://Assets/Questions/Light/Images/servico-automotivo.png" id="1_8b0rx"]
 [ext_resource type="Script" path="res://scripts/resources/questions.gd" id="1_c1fsu"]
-[ext_resource type="Texture2D" uid="uid://ceb7akeccm508" path="res://Assets/Questions/Light/Images/questao_1.png" id="1_q8hmp"]
 
 [resource]
 script = ExtResource("1_c1fsu")
 question_info = "Vocês preferem lavar o carro de que forma?"
 type = 1
-question_image = ExtResource("1_q8hmp")
+question_image = ExtResource("1_8b0rx")
 options = Array[String](["Usamos mangueira", "Usamos balde e esponja", "Levamos a um lava-rápido que usa água reutilizada", "Não lavamos com frequência"])
 best_option = "Levamos a um lava-rápido que usa água reutilizada"
 good_option = "Usamos balde e esponja"

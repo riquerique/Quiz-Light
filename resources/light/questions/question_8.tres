@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="QuizQuestion" load_steps=3 format=3 uid="uid://iunqxsfh3bsl"]
 
-[ext_resource type="Texture2D" uid="uid://ceb7akeccm508" path="res://Assets/Questions/Light/Images/questao_1.png" id="1_aq4t6"]
+[ext_resource type="Texture2D" uid="uid://6vadpatufiio" path="res://Assets/Questions/Light/Images/reutilizar-agua.png" id="1_4xjym"]
 [ext_resource type="Script" path="res://scripts/resources/questions.gd" id="1_udfso"]
 
 [resource]
 script = ExtResource("1_udfso")
 question_info = "Com que frequência vocês coletam água da chuva para reutilizar?"
 type = 1
-question_image = ExtResource("1_aq4t6")
+question_image = ExtResource("1_4xjym")
 options = Array[String](["Sempre que chove", "Frequentemente", "Às vezes", "Nunca"])
 best_option = "Sempre que chove"
 good_option = "Frequentemente"

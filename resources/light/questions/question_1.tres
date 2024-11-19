@@ -1,16 +1,15 @@
 [gd_resource type="Resource" script_class="QuizQuestion" load_steps=3 format=3 uid="uid://dfh23mitwg1ah"]
 
+[ext_resource type="Texture2D" uid="uid://dvr0elgumttqj" path="res://Assets/Questions/Light/Images/banho.png" id="1_7ghhm"]
 [ext_resource type="Script" path="res://scripts/resources/questions.gd" id="1_ml6xy"]
-[ext_resource type="Texture2D" uid="uid://ceb7akeccm508" path="res://Assets/Questions/Light/Images/questao_1.png" id="1_tfjsj"]
 
 [resource]
 script = ExtResource("1_ml6xy")
 question_info = "Com que frequência sua família toma banhos rápidos (menos de 5 minutos)?"
 type = 1
-question_image = ExtResource("1_tfjsj")
+question_image = ExtResource("1_7ghhm")
 options = Array[String](["Sempre", "Frequentemente", "Às vezes", "Raramente"])
 best_option = "Sempre"
 good_option = "Frequentemente"
 ok_option = "Às vezes"
 bad_option = "Raramente"
-question_information = ""

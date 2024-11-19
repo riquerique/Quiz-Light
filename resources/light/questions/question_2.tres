@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="QuizQuestion" load_steps=3 format=3 uid="uid://bd4qrrui4r0ey"]
 
-[ext_resource type="Texture2D" uid="uid://ceb7akeccm508" path="res://Assets/Questions/Light/Images/questao_1.png" id="1_2l63g"]
+[ext_resource type="Texture2D" uid="uid://dv2k4vokfle2m" path="res://Assets/Questions/Light/Images/escovar-os-dentes.png" id="1_lgjye"]
 [ext_resource type="Script" path="res://scripts/resources/questions.gd" id="1_nwefj"]
 
 [resource]
 script = ExtResource("1_nwefj")
 question_info = "Qual das seguintes ações vocês realizam ao escovar os dentes?"
 type = 1
-question_image = ExtResource("1_2l63g")
+question_image = ExtResource("1_lgjye")
 options = Array[String](["Deixamos a torneira sempre aberta", "Abrimos e fechamos a torneira enquanto escovamos", "Usamos um copo para enxaguar a boca", "Desligamos a torneira e só ligamos para enxaguar"])
 best_option = "Desligamos a torneira e só ligamos para enxaguar"
 good_option = "Usamos um copo para enxaguar a boca"

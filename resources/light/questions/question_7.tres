@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="QuizQuestion" load_steps=3 format=3 uid="uid://cnb0aaox4gbll"]
 
-[ext_resource type="Texture2D" uid="uid://ceb7akeccm508" path="res://Assets/Questions/Light/Images/questao_1.png" id="1_s3oou"]
+[ext_resource type="Texture2D" uid="uid://cqg25tpndtmp4" path="res://Assets/Questions/Light/Images/pingo-dagua.png" id="1_dt2f4"]
 [ext_resource type="Script" path="res://scripts/resources/questions.gd" id="1_w4j3d"]
 
 [resource]
 script = ExtResource("1_w4j3d")
 question_info = "Vocês têm equipamentos de economia de água (como redutores de vazão) instalados em casa?"
 type = 1
-question_image = ExtResource("1_s3oou")
+question_image = ExtResource("1_dt2f4")
 options = Array[String](["Sim, em todas as torneiras e chuveiros", "Sim, em alguns pontos", "Temos apenas chuveiro econômico", "Não temos nenhum"])
 best_option = "Sim, em todas as torneiras e chuveiros"
 good_option = "Sim, em alguns pontos"
