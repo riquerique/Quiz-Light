@@ -67,22 +67,18 @@ func _buttons_answer(button) -> void:
 	#	$Audio_Wrong.play()
 	if current_quiz.best_option == button.text:
 		print("BEST")
-		button.modulate = color_correct
 		GlobalVar.pontos += points_array[index][0]
 		$Audio_Correct.play()
 	elif current_quiz.good_option == button.text:
 		print("GOOD")
-		button.modulate = color_correct
 		GlobalVar.pontos += points_array[index][1]
 		$Audio_Correct.play()
 	elif current_quiz.ok_option == button.text:
 		print("OK")
-		button.modulate = color_correct
 		GlobalVar.pontos += points_array[index][2]
 		$Audio_Correct.play()
 	else:
 		print("BAD")
-		button.modulate = color_correct
 		GlobalVar.pontos += points_array[index][3]
 		$Audio_Correct.play()
 	_next_question()
