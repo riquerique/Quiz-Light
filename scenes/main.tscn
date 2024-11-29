@@ -1,12 +1,13 @@
-[gd_scene load_steps=13 format=3 uid="uid://b1hurt7kd0beg"]
+[gd_scene load_steps=14 format=3 uid="uid://b1hurt7kd0beg"]
 
 [ext_resource type="Script" path="res://scripts/Controller/game_controller.gd" id="1_a6j28"]
 [ext_resource type="Resource" uid="uid://dwl3rlgrug82i" path="res://resources/light/theme_test.tres" id="2_tqna5"]
-[ext_resource type="Texture2D" uid="uid://bvvpnp2suxfe6" path="res://Assets/Images/question_layout.png" id="3_8m7ml"]
+[ext_resource type="Texture2D" uid="uid://bdjv3nt1k40qe" path="res://Assets/Images/new_question_layout.png" id="3_gr571"]
 [ext_resource type="AudioStream" uid="uid://lggn6mbxvmyc" path="res://Assets/Audio/choice_correct.mp3" id="3_hmoir"]
-[ext_resource type="Texture2D" uid="uid://73ky5ccfd6a8" path="res://Assets/Images/Button.png" id="3_kcbwi"]
 [ext_resource type="Theme" uid="uid://kv63ccy33wy6" path="res://resources/light/theme_buttons.tres" id="4_7e3qa"]
 [ext_resource type="AudioStream" uid="uid://di05e7bgj4hps" path="res://Assets/Audio/choice_wrong.mp3" id="4_bikjo"]
+[ext_resource type="FontFile" uid="uid://7f57i750lch" path="res://Assets/Fonts/FTB.ttf" id="5_hwinq"]
+[ext_resource type="Texture2D" uid="uid://ce0y5auk5en1n" path="res://Assets/Images/new_question_button.png" id="5_xlnb4"]
 
 [sub_resource type="Animation" id="Animation_vjo0e"]
 length = 0.001
@@ -121,7 +122,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(80, 473), Vector2(50, 473)]
+"values": [Vector2(80, 540), Vector2(28, 541)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -130,10 +131,10 @@ tracks/1/path = NodePath("Ani/Option_2:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0.6, 1.6),
+"times": PackedFloat32Array(0.6, 1.63333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(80, 673), Vector2(50, 673)]
+"values": [Vector2(80, 716), Vector2(28, 716)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -142,10 +143,10 @@ tracks/2/path = NodePath("Ani/Option_3:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(1.2, 2.2),
+"times": PackedFloat32Array(1.2, 2.23333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(80, 873), Vector2(50, 873)]
+"values": [Vector2(80, 892), Vector2(28, 892)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -157,7 +158,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(1.8, 2.8),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(80, 1073), Vector2(50, 1073)]
+"values": [Vector2(78.7767, 1067.98), Vector2(28, 1068)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -246,13 +247,13 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 6.0
-offset_top = -583.0
-offset_right = -5.0
-offset_bottom = -173.0
+offset_left = 32.0
+offset_top = -608.0
+offset_right = -32.0
+offset_bottom = -96.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_8m7ml")
+texture = ExtResource("3_gr571")
 
 [node name="Question_Info_OLD" type="VBoxContainer" parent="Content"]
 visible = false
@@ -320,22 +321,18 @@ speed_scale = 2.0
 [node name="Option_1" type="Button" parent="Content/Question_Options/Ani"]
 offset_left = 50.0
 offset_top = 473.0
-offset_right = 670.0
-offset_bottom = 673.0
+offset_right = 713.0
+offset_bottom = 687.0
 scale = Vector2(1.00252, 1)
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("4_7e3qa")
-theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
-theme_override_font_sizes/font_size = 38
+theme_override_fonts/font = ExtResource("5_hwinq")
+theme_override_font_sizes/font_size = 30
 theme_override_styles/focus = SubResource("StyleBoxEmpty_8w54f")
-icon = ExtResource("3_kcbwi")
+icon = ExtResource("5_xlnb4")
 flat = true
 autowrap_mode = 2
 icon_alignment = 1
@@ -344,21 +341,17 @@ expand_icon = true
 [node name="Option_2" type="Button" parent="Content/Question_Options/Ani"]
 offset_left = 50.0
 offset_top = 673.0
-offset_right = 670.0
-offset_bottom = 873.0
+offset_right = 716.0
+offset_bottom = 889.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("4_7e3qa")
-theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
-theme_override_font_sizes/font_size = 38
+theme_override_fonts/font = ExtResource("5_hwinq")
+theme_override_font_sizes/font_size = 30
 theme_override_styles/focus = SubResource("StyleBoxEmpty_el2jc")
-icon = ExtResource("3_kcbwi")
+icon = ExtResource("5_xlnb4")
 flat = true
 autowrap_mode = 2
 icon_alignment = 1
@@ -367,21 +360,17 @@ expand_icon = true
 [node name="Option_3" type="Button" parent="Content/Question_Options/Ani"]
 offset_left = 50.0
 offset_top = 873.0
-offset_right = 670.0
-offset_bottom = 1073.0
+offset_right = 716.0
+offset_bottom = 1089.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("4_7e3qa")
-theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
-theme_override_font_sizes/font_size = 38
+theme_override_fonts/font = ExtResource("5_hwinq")
+theme_override_font_sizes/font_size = 30
 theme_override_styles/focus = SubResource("StyleBoxEmpty_el2jc")
-icon = ExtResource("3_kcbwi")
+icon = ExtResource("5_xlnb4")
 flat = true
 autowrap_mode = 2
 icon_alignment = 1
@@ -390,21 +379,17 @@ expand_icon = true
 [node name="Option_4" type="Button" parent="Content/Question_Options/Ani"]
 offset_left = 50.0
 offset_top = 1073.0
-offset_right = 670.0
-offset_bottom = 1273.0
+offset_right = 715.0
+offset_bottom = 1289.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("4_7e3qa")
-theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
-theme_override_font_sizes/font_size = 38
+theme_override_fonts/font = ExtResource("5_hwinq")
+theme_override_font_sizes/font_size = 30
 theme_override_styles/focus = SubResource("StyleBoxEmpty_el2jc")
-icon = ExtResource("3_kcbwi")
+icon = ExtResource("5_xlnb4")
 flat = true
 autowrap_mode = 2
 icon_alignment = 1
@@ -415,14 +400,16 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 60.0
+offset_left = 72.0
 offset_top = 144.0
-offset_right = -53.0
-offset_bottom = -871.0
+offset_right = -72.0
+offset_bottom = -778.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Question_Image_2" type="TextureRect" parent="Content/Question_Info_2"]
+texture_filter = 2
+texture_repeat = 2
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -434,7 +421,8 @@ stretch_mode = 5
 custom_minimum_size = Vector2(0, 70)
 layout_mode = 2
 size_flags_vertical = 6
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.364706, 0.360784, 0.356863, 1)
+theme_override_fonts/font = ExtResource("5_hwinq")
 theme_override_font_sizes/font_size = 32
 text = "PERGUNTA"
 horizontal_alignment = 1
