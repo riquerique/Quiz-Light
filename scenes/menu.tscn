@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bfcimw1u8itdj"]
+[gd_scene load_steps=8 format=3 uid="uid://bfcimw1u8itdj"]
 
 [ext_resource type="Script" path="res://scripts/Controller/menu.gd" id="1_jn3gv"]
 [ext_resource type="StyleBox" uid="uid://5hcpmylj6yyn" path="res://resources/Styles/button_hover.tres" id="2_dpv2r"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://mv4u6244jg87" path="res://Assets/Images/WhiteBG.png" id="2_tjjwr"]
 [ext_resource type="FontFile" uid="uid://7f57i750lch" path="res://Assets/Fonts/FTB.ttf" id="3_r2wmu"]
 [ext_resource type="Texture2D" uid="uid://bqrwt8kukg5fg" path="res://Assets/Images/MicrosoftTeams-image-104.png" id="6_6ekkw"]
+[ext_resource type="Texture2D" uid="uid://cqrb6mb55kmtj" path="res://Assets/Images/Ativo 1.png" id="6_oyhhv"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -29,9 +30,9 @@ anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
 offset_left = 85.0
-offset_top = 83.0
+offset_top = 250.0
 offset_right = -85.0
-offset_bottom = 209.0
+offset_bottom = 376.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -82,7 +83,18 @@ text = "FAÇA O QUIZ E DESCUBRA SEU PERFIL DE CONSUMO."
 horizontal_alignment = 1
 autowrap_mode = 2
 
+[node name="TextureRect3" type="TextureRect" parent="."]
+texture_filter = 2
+texture_repeat = 2
+offset_left = 157.0
+offset_top = 432.0
+offset_right = 5178.0
+offset_bottom = 5364.0
+scale = Vector2(0.079999, 0.079999)
+texture = ExtResource("6_oyhhv")
+
 [node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
 offset_left = 96.0
 offset_top = 1108.0
 offset_right = 302.0
