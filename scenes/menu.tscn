@@ -86,6 +86,7 @@ autowrap_mode = 2
 [node name="TextureRect3" type="TextureRect" parent="."]
 texture_filter = 2
 texture_repeat = 2
+layout_mode = 0
 offset_left = 157.0
 offset_top = 432.0
 offset_right = 5178.0
