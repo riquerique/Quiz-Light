@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b5w1yk0tqcxoy"]
+[gd_scene load_steps=7 format=3 uid="uid://b5w1yk0tqcxoy"]
 
 [ext_resource type="Script" path="res://scripts/resultado.gd" id="1_0yt5c"]
 [ext_resource type="StyleBox" uid="uid://k5bopk0s1r21" path="res://resources/Styles/button_normal.tres" id="2_e3ctl"]
@@ -6,7 +6,6 @@
 [ext_resource type="StyleBox" uid="uid://5hcpmylj6yyn" path="res://resources/Styles/button_hover.tres" id="2_v3dx5"]
 [ext_resource type="Texture2D" uid="uid://dmgibo3jc3b3w" path="res://Assets/Questions/Light/Images/1.png" id="3_6iq4x"]
 [ext_resource type="FontFile" uid="uid://7f57i750lch" path="res://Assets/Fonts/FTB.ttf" id="3_41rcm"]
-[ext_resource type="FontFile" uid="uid://p8p8onnr4qqy" path="res://Assets/Fonts/FTLC.ttf" id="4_t6gwe"]
 
 [node name="Results" type="Control"]
 layout_mode = 3
@@ -108,10 +107,9 @@ offset_bottom = 365.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0.639216, 0.607843, 1)
-theme_override_fonts/font = ExtResource("4_t6gwe")
+theme_override_fonts/font = ExtResource("3_41rcm")
 theme_override_font_sizes/font_size = 48
-text = "Parabéns! Vocês têm hábitos exemplares de consumo consciente de água. Continuem assim e inspire outras pessoas!
-AAAAAAAAAAAAAAAAAAAAA"
+text = "Parabéns! Vocês têm hábitos exemplares de consumo consciente de água. Continuem assim e inspire outras pessoas!"
 horizontal_alignment = 1
 autowrap_mode = 3
 
